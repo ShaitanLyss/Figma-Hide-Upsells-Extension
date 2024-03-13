@@ -6,7 +6,7 @@ const observer = new MutationObserver((mutations) => {
       mutation.addedNodes.forEach((n) => {
         console.log(n)
         if (n instanceof Element) {
-          const upsellElmnts = document.querySelectorAll('[class*="upsell"]');
+          const upsellElmnts = n.querySelectorAll('[class*="upsell"], [data-onboarding-key="file_tracker_upsell_tooltip_key"]');
           for (const e of upsellElmnts)
              e.remove() 
         }
