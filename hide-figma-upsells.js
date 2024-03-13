@@ -5,8 +5,8 @@ const observer = new MutationObserver((mutations) => {
   mutations.forEach((mutation) => {
     if (mutation.addedNodes.length) {
       mutation.addedNodes.forEach((n) => {
-        console.log("Removing", n)
-        n.remove()
+        if (n instanceof Element && element.matches('[class*="upsell"]'))
+           n.remove() 
       })
     }
   });
