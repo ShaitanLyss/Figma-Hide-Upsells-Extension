@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Hide Figma Upsells",
-  "version", "0.0.1",
+  "version", "1.0.0",
   "content_scripts": [
     {
       "matches": ["https://www.figma.com/*"],
